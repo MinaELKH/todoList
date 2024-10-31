@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex items-center justify-center">
+    <div class="grid grid-rows-[10vh_80vh_10vh] w-full h-screen">
+        <!-- Première ligne violette -->
+        <div class="bg-indigo-950">
+          <h1 class="text-center text-4xl font-bold text-white m-8">To do</h1>
+        </div>
+      
+        <!-- Ligne centrale blanche -->
+        <div class="bg-white grid  self-start">
+            <div class="bg-white  flex    justify-evenly    gap-5  m-8  p-8 border-b-2 border-y-indigo-300 ">
+              <button class= "bg-blue-500 hover:bg-blue-700 text-white  w-40  h-10 font-bold py-2 px-4 rounded-full">
+                Ajouter
+               </button>
+               <button class="bg-blue-500 hover:bg-blue-700 text-white   h-10 w-40 font-bold py-2 px-4 rounded-full">
+                Ajouter
+               </button>
+               <button class="bg-blue-500 hover:bg-blue-700 text-white  w-40  h-10 font-bold py-2 px-4 rounded-full">
+                Ajouter +
+               </button>
+            </div>
+          
+
+            <div  id="main"  class="grid grid-cols-3 gap-5" >
+
+                    <div class="shadow-xl border  rounded">
+                             <h2 class="text-xl"> To Do </h2> <span id="comp_todo"> 0 </span>
+                             <div>
+                               <ul id="ultodo">
+                                  <li>
+
+                                  </li>
+                               </ul>
+                             </div>
+                    </div>
+
+                    <div class="shadow-xl border  rounded">
+                      <h2 class="text-xl"> Doing </h2> <span id="comp_doing"> 0 </span>
+                      <div>
+                        <ul id="uldoing">
+                           <li>
+
+                           </li>
+                        </ul>
+                      </div>
+                  </div>
+
+                      <div class="shadow-xl border  rounded">
+                            <div class="flex flex-row justify-between items-center p-4 bg-gray-100 rounded-md shadow-md">
+                              <h2 class="text-xl font-semibold text-gray-700">Done</h2>
+                              <span id="comp_done" class="text-lg font-bold text-blue-500">0</span>
+                            </div>
+                            <div>
+                              <ul id="uldone">
+                                <li>
+
+                                </li>
+                              </ul>
+                            </div>
+                      </div>
+            </div>
+        </div>
+        
+        <!-- Dernière ligne violette -->
+        <div class="bg-indigo-950"></div>
+    </div>
+</body>
+</html>

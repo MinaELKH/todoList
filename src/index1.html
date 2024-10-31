@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+</head>
+!<body>
+<section>
+   <div class="h-screen p-2">
+
+
+    <div class="grid grid-cols-4  gap-5 border-2 border-rose-600 ">
+      <div class="bg-blue-100 rounded p-2"> 
+        <div class="flex flex-row justify-between items-center m-2 border">
+          <h2>tache</h2>
+        </div>
+        <div class="flex flex-row justify-between items-center m-2 border">
+
+         <!--En tant que développeur Front-End, 
+          je vais créer un modal permettant d'ajouter une nouvelle tâche. 
+          Ce modal contiendra des champs pour
+
+           le titre,     la description, un statut (To do, doing, done),   la date d’échéance, et la priorité de la tâche (P1, P2, P3). 
+
+           La couleur et le style de chaque tâche afficheront automatiquement sa priorité.--> 
+
+            <form  b-2  m-2   >
+              <label for="titre" class="b-2  m-2" > Titre </label>
+              <input type="text" name="titre" id="titre" value="hy">
+            </br>
+              <label for="description"  class="b-2  m-2"> Description</label>
+              <input type="text" name="description" id="description">
+            </br>
+              <label for="statut" class="b-2  m-2"> statut </label>
+              <select name="statut"  id="statut">
+                <option>To Do</option>
+                <option>Doing</option>
+                <option>Done</option>
+              </select>
+            </br>
+              <label for="priorite" class="b-2  m-2"> priorite </label>
+              <select name="priorite"  id="priorite" >
+                <option>p1</option>
+                <option>p2</option>
+                <option>p3</option>
+              </select>
+            </br>
+              <button id="btn-ajouter" class="bg-indigo-500 text-white"> Ajouter</button>
+            </form>
+                 
+  
+        </div>
+    </div>
+
+      <div class="bg-blue-100 rounded p-2"> 
+          <div class="flex flex-row justify-between items-center m-2 border">
+            <h2>To do</h2>
+          </div>
+          <div class="flex flex-row justify-between items-center m-2 border">
+                <ul  id="ulDolist">
+                   
+                </ul>
+          </div>
+      </div>
+
+    </div>
+   </div>
+
+</section>
+
+<script>
+
+
+  let titre = document.getElementsById("titre").value ; 
+  let description = document.getElementsById("description").value ; 
+  let statut = document.getElementsById("statut").value ; 
+  let priorite = document.getElementsById("priorite").value ; 
+  document.getElementById("btn-ajouter").addEventListener("click", ajouterTodo);
+
+  function ajouterTodo(){
+
+        const tache = document.createElement("li");
+        const node = document.getElementById(ulDolist);
+        node.appendChild(tache);
+
+
+        
+
+  }
+</script>
+</body>
+</html>
